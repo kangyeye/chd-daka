@@ -90,6 +90,7 @@ def task(username, password, address, position, wxkey):
             area.click()
             time.sleep(3)
             output_data += '\n\n- 位置获取成功...'
+            print("位置获取成功")
            
             #自己输入的具体位置
             driver.find_element(By.XPATH, '//*[@id="app"]/div[2]/form/div[3]/div[2]/div/span/textarea').send_keys(address)
